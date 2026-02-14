@@ -1,0 +1,32 @@
+{
+  "name": "degiro-report",
+  "version": "1.0.0",
+  "description": "Parse Degiro transaction CSVs and generate portfolio reports",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "degiro-report": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "degiro",
+    "portfolio",
+    "transactions",
+    "report",
+    "csv"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2"
+  }
+}
